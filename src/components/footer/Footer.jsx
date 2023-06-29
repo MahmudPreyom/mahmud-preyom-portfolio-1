@@ -21,7 +21,7 @@ const Footer = () => {
                 <a href="https://www.youtube.com/channel/UCjMxx9QlxCZWbHELuvZxU5A"><AiFillYoutube/></a>
             </div>
             <div className="footer__copyright">
-                <small>&copy; Mahmud Preyom. All Rights Reserved.</small>
+                <p>&copy; Mahmud Preyom. All Rights Reserved.</p>
             </div>
         </footer>
     );
