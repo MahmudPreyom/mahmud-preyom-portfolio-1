@@ -15,7 +15,7 @@ const Header = () => {
                         {/* Style will be inherited from the parent element */}
                         <Typewriter
                             words={['A MARN Stack Web Developer', 'A Website Designer', 'Passionate for Codding']}
-                            loop={5}
+                            loop={15}
                             cursor
                             cursorStyle=''
                             typeSpeed={70}
