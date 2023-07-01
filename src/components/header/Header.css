@@ -1,5 +1,5 @@
 header{
-    height: 100vh;
+    height: 130vh;
     padding-top: 7rem;
     overflow: hidden;
 }
@@ -37,7 +37,7 @@ header{
 }
 
 /* =========================== ME ============================== */
-.me{
+ .me{
     background: linear-gradient(var(--color-primary), transparent) ;
     width: 22rem;
     height: 100%;
@@ -46,7 +46,7 @@ header{
     margin-top: 2rem;
     border-radius: 5rem 5rem;
     overflow: hidden;
-    /* padding: 5rem 1.5rem 1.5rem 1.5rem; */
+    padding-right: 10px;
 }
 
 /* =========================== Scroll Down ============================== */
@@ -62,16 +62,20 @@ header{
 /* ================== mediaquery(medium devices) ========================== */
 @media screen and (max-width: 1024px) {
     header{
-        height: 68vh;
+        /* height: 68vh; */
+        height: 130vh;
     }
+    
+    
 }
 
 /* ================== mediaquery(medium devices) ========================== */
 @media screen and (max-width: 600px) {
     header{
-        height: 100vh;
+        height: 130vh;
     }
     .header__socials,.scroll__down{
         display: none;
     }
+    
 }

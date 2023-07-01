@@ -1,12 +1,30 @@
 import './Experience.css'
 import { BsFillPatchCheckFill } from 'react-icons/bs'
+import { BiLogoCss3 } from 'react-icons/bi'
+import { SiMongodb } from 'react-icons/si'
+import { FaReact, FaBootstrap,FaNodeJs } from 'react-icons/fa'
+import { TbBrandVite,TbBrandTailwind,TbBrandFirebase,TbBrandJavascript,TbBrandHtml5 } from 'react-icons/tb'
+import Marquee from "react-fast-marquee";
 
 const Experience = () => {
     return (
         <section id='experience'>
             <h5>What Skills I Have</h5>
             <h2>My Experience</h2>
-
+            
+            <Marquee style={{marginBottom: "50px", color: "var(--color-light)"}}>
+                <FaReact style={{fontSize: "4rem", marginRight: "100px"}}/>
+                <TbBrandVite style={{fontSize: "4rem", marginRight: "100px"}}/>
+                <TbBrandTailwind style={{fontSize: "4rem", marginRight: "100px"}}/>
+                <FaBootstrap style={{fontSize: "4rem", marginRight: "100px"}}/>
+                <SiMongodb style={{fontSize: "4rem", marginRight: "100px"}}/>
+                <FaNodeJs style={{fontSize: "4rem", marginRight: "100px"}}/>
+                <TbBrandFirebase style={{fontSize: "4rem", marginRight: "100px"}}/>
+                <TbBrandJavascript style={{fontSize: "4rem", marginRight: "100px"}}/>
+                <TbBrandHtml5 style={{fontSize: "4rem", marginRight: "100px"}}/>
+                <BiLogoCss3 style={{fontSize: "4rem", marginRight: "100px"}}/>
+            </Marquee>
+            
             <div className="container experience__container">
                 <div className="experience__frontend">
                     <h3>Frontend Development</h3>
@@ -90,6 +108,7 @@ const Experience = () => {
                     </div>
                 </div>
             </div>
+            
         </section>
     );
 };

@@ -1,39 +1,90 @@
 import './About.css'
-import about from "../../assets/_ALO9557-01.jpeg"
+import about from "../../assets/IMG_20230630_212737.jpg"
 import { VscProject } from "react-icons/vsc";
-import { SiExpensify, SiCompilerexplorer } from "react-icons/si";
+import { CgWebsite } from "react-icons/cg";
+import { SiCompilerexplorer } from "react-icons/si";
+// import { useTransform, useViewportScroll, motion } from 'framer-motion';
+import { motion } from "framer-motion"
+
 
 const About = () => {
+
+    // const { scrollYProgress } = useViewportScroll()
+    // const scale = useTransform(scrollYProgress, [0, 0.1], [0.1, 2]);
+
     return (
         <section id='about'>
+
             <h5>Get To Know</h5>
             <h2>About Me</h2>
-
+            
+            {/* <motion.div style={{ scale }}>
+                <motion.div
+                    style={{
+                        scaleY: scrollYProgress
+                    }}> */}
             <div className="container about__container">
                 <div className="about__me">
                     <div className="about__me-image">
-                        <img src={about} alt="About Image" />
+                        <motion.div
+                            initial={{ scale: 0 }}
+                            animate={{ rotate: 360, scale: 1 }}
+                            transition={{
+                                type: "spring",
+                                stiffness: 260,
+                                damping: 20
+                            }}>
+                            <img src={about} alt="About Image" />
+                        </motion.div>
                     </div>
+
                 </div>
 
                 <div className="about__content">
                     <div className="about__cards">
                         <article className='about__card'>
-                            <SiExpensify className='about__icon'/>
-                            <h5>Experience</h5>
-                            <small>6+ month Learning</small>
+                            <motion.div
+                                initial={{ scale: 0 }}
+                                animate={{ rotate: 360, scale: 1 }}
+                                transition={{
+                                    type: "spring",
+                                    stiffness: 260,
+                                    damping: 20
+                                }}>
+                                <CgWebsite className='about__icon' />
+                                <h5>Interest</h5>
+                                <small>For Advance Web Development</small>
+                            </motion.div>
                         </article>
 
                         <article className='about__card'>
-                            <SiCompilerexplorer className='about__icon'/>
-                            <h5>Explore</h5>
-                            <small>Updated React Components</small>
+                            <motion.div
+                                initial={{ scale: 0 }}
+                                animate={{ rotate: 360, scale: 1 }}
+                                transition={{
+                                    type: "spring",
+                                    stiffness: 260,
+                                    damping: 20
+                                }}>
+                                <SiCompilerexplorer className='about__icon' />
+                                <h5>Explore</h5>
+                                <small>Updated React Components</small>
+                            </motion.div>
                         </article>
 
                         <article className='about__card'>
-                            <VscProject className='about__icon'/>
-                            <h5>Project</h5>
-                            <small>5+ projects</small>
+                            <motion.div
+                                initial={{ scale: 0 }}
+                                animate={{ rotate: 360, scale: 1 }}
+                                transition={{
+                                    type: "spring",
+                                    stiffness: 260,
+                                    damping: 20
+                                }}>
+                                <VscProject className='about__icon' />
+                                <h5>Project</h5>
+                                <small>5+ projects</small>
+                            </motion.div>
                         </article>
                     </div>
                     <p>
@@ -42,6 +93,8 @@ const About = () => {
                     <a href="#contact" className='btn btn-primary'>Let's Talk</a>
                 </div>
             </div>
+            {/* </motion.div>
+            </motion.div> */}
         </section>
     );
 };

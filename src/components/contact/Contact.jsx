@@ -4,6 +4,7 @@ import './Contact.css'
 import { MdOutlineEmail } from "react-icons/md"
 import { RiMessengerLine } from "react-icons/ri"
 import { BsWhatsapp } from "react-icons/bs"
+import Swal from 'sweetalert2';
 
 const Contact = () => {
     const form = useRef();
@@ -11,12 +12,19 @@ const Contact = () => {
         e.preventDefault();
 
         emailjs.sendForm('service_qemrzwr', 'template_w4k4avb', form.current, 'Z_mUev9W9x5mtXq3e')
-        e.target.reset()
             .then((result) => {
                 console.log(result.text);
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Your work has been saved',
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
             }, (error) => {
                 console.log(error.text);
             });
+            e.target.reset()
     };
 
     return (

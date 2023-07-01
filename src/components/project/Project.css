@@ -21,6 +21,34 @@
     border-radius: 1.5rem;
     overflow: hidden;
 }
+/* mistake */
+.project__item-image .box{
+    width: 100%;
+    height: 300px;
+    background: var(--color-bg);
+    background-position: top;
+    transition: ease-in-out 20s;
+}
+
+.project__item-image .box.box1{
+    background: url(../../assets/Screenshot_2023-06-30-20-12-22-23.jpg);
+    background-size: cover;
+
+}
+.project__item-image .box.box2{
+    background: url(../../assets/Screenshot_2023-06-30-20-09-52-87.jpg);
+    background-size: cover;
+
+}
+.project__item-image .box.box3{
+    background: url(../../assets/Screenshot_2023-06-30-20-08-02-35.jpg);
+    background-size: cover;
+
+}
+
+.project__item-image .box:hover{
+    background-position: bottom;
+}
 
 .project__item h3 {
     margin: 1.2rem 0 2rem;
@@ -29,11 +57,16 @@
 .project__item-cta{
     display: flex;
     gap: 1rem;
+    justify-content: space-around;
 }
 
 .project__item-cta1{
-    text-align: center;
-    margin-top: 10px;
+    /* text-align: center;
+    margin-top: 10px; */
+    display: flex;
+    gap: 1rem;
+    margin-top: 3px;
+    justify-content: space-around;
 }
 
 /* ================== (medium devices) ========================== */
@@ -42,6 +75,9 @@
         grid-template-columns: 1fr 1fr;
         gap: 1.2rem;
     }
+    .project__item{
+        width: 100%;
+    }
 }
 
 /* ================== (small devices) ========================== */
@@ -49,5 +85,8 @@
     .project__container{
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+    .project__item{
+        width: 100%;
     }
 }
