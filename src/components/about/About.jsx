@@ -14,10 +14,8 @@ const About = () => {
 
     return (
         <section id='about'>
-
             <h5>Get To Know</h5>
             <h2>About Me</h2>
-            
             {/* <motion.div style={{ scale }}>
                 <motion.div
                     style={{
@@ -25,7 +23,7 @@ const About = () => {
                     }}> */}
             <div className="container about__container">
                 <div className="about__me">
-                    <div className="about__me-image">
+                    <div className="about__me-image" data-aos="zoom-in">
                         <motion.div
                             initial={{ scale: 0 }}
                             animate={{ rotate: 360, scale: 1 }}
@@ -42,7 +40,7 @@ const About = () => {
 
                 <div className="about__content">
                     <div className="about__cards">
-                        <article className='about__card'>
+                        <article className='about__card' data-aos="fade-up">
                             <motion.div
                                 initial={{ scale: 0 }}
                                 animate={{ rotate: 360, scale: 1 }}
@@ -57,7 +55,7 @@ const About = () => {
                             </motion.div>
                         </article>
 
-                        <article className='about__card'>
+                        <article className='about__card' data-aos="zoom-in">
                             <motion.div
                                 initial={{ scale: 0 }}
                                 animate={{ rotate: 360, scale: 1 }}
@@ -72,7 +70,7 @@ const About = () => {
                             </motion.div>
                         </article>
 
-                        <article className='about__card'>
+                        <article className='about__card' data-aos="fade-up">
                             <motion.div
                                 initial={{ scale: 0 }}
                                 animate={{ rotate: 360, scale: 1 }}
@@ -87,10 +85,10 @@ const About = () => {
                             </motion.div>
                         </article>
                     </div>
-                    <p>
-                        Hello my passionate is about creating beautiful and user-friendly interfaces. I believe that front-end development is more than just coding, it is about creating experiences that people will love. As my passionate, I obtained with a strong foundation in front-end development. I have experience with a variety of technologies, including Node.js, MongoDB, React.js, Firebase, Tailwind CSS, Daisy UI, and React-Bootstrap. I am also familiar with the latest trends in front-end development, such as responsive design and accessibility.
+                    <p data-aos="zoom-in">
+                        Hello I am Mohammad Abdullah Al Mahmud Preyom. I used as a short name Mahmud Preyom. I am from Feni in Bangladesh. I am a junior frontend developer. I have Done developing many Project with my experience and I enjoy it to making. My passionate is about creating beautiful and user-friendly interfaces. I believe that front-end development is more than just coding, it is about creating experiences that people will love. As my passionate, I obtained with a strong foundation in front-end development. I have experience with a variety of technologies, including Node.js, MongoDB, React.js, Firebase, Tailwind CSS, Daisy UI, and React-Bootstrap. I am also familiar with the latest trends in front-end development, such as responsive design and accessibility.
                     </p>
-                    <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+                    <a href="#contact" className='btn btn-primary' data-aos="zoom-in">Let's Talk</a>
                 </div>
             </div>
             {/* </motion.div>

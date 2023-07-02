@@ -3,7 +3,7 @@ import { BsFillPatchCheckFill } from 'react-icons/bs'
 import { BiLogoCss3 } from 'react-icons/bi'
 import { SiMongodb } from 'react-icons/si'
 import { FaReact, FaBootstrap,FaNodeJs } from 'react-icons/fa'
-import { TbBrandVite,TbBrandTailwind,TbBrandFirebase,TbBrandJavascript,TbBrandHtml5 } from 'react-icons/tb'
+import { TbBrandVite,TbBrandTailwind,TbBrandFirebase,TbBrandJavascript,TbBrandHtml5,TbBrandFigma } from 'react-icons/tb'
 import Marquee from "react-fast-marquee";
 
 const Experience = () => {
@@ -23,12 +23,13 @@ const Experience = () => {
                 <TbBrandJavascript style={{fontSize: "4rem", marginRight: "100px"}}/>
                 <TbBrandHtml5 style={{fontSize: "4rem", marginRight: "100px"}}/>
                 <BiLogoCss3 style={{fontSize: "4rem", marginRight: "100px"}}/>
+                <TbBrandFigma style={{fontSize: "4rem", marginRight: "100px"}}/>
             </Marquee>
             
-            <div className="container experience__container">
+            <div className="container experience__container" data-aos="zoom-in">
                 <div className="experience__frontend">
                     <h3>Frontend Development</h3>
-                    <div className="experience__content">
+                    <div className="experience__content" data-aos="fade-up">
                         <article className='experience__details'>
                             <BsFillPatchCheckFill className='experience__details-icon' />
                             <div>
@@ -74,7 +75,7 @@ const Experience = () => {
                     </div>
                 </div>
                 {/* END OF FRONTEND */}
-                <div className="experience__backend">
+                <div className="experience__backend" data-aos="fade-down">
                     <h3>Backend Development</h3>
                     <div className="experience__content">
                         <article className='experience__details'>

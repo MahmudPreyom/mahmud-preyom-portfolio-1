@@ -12,13 +12,13 @@ const Header = () => {
         <header>
             <div className="container header__container">
                 <h2>Hello, This is</h2>
-                <h1>Mahmud Preyom</h1>
+                <h1 data-aos="fade-up">Mahmud Preyom</h1>
                 <h2 className="text-light">I am <br />
                     <span style={{ color: 'Highlight', fontWeight: 'bold', fontStyle: "italic" }}>
                         {/* Style will be inherited from the parent element */}
                         <Typewriter
                             words={['A MARN Stack Web Developer', 'A Website Designer', 'Passionate for Codding']}
-                            loop={15}
+                            loop={100}
                             cursor
                             cursorStyle=''
                             typeSpeed={70}
@@ -29,7 +29,7 @@ const Header = () => {
                 </h2>
                 <CTA></CTA>
                 <HeaderSocial></HeaderSocial>
-                <div className='me'>
+                <div className='me' data-aos="fade-down">
                 <motion.div
                     initial={{ scale: 0 }}
                     animate={{ rotate: 360, scale: 1 }}

@@ -58,8 +58,11 @@
     display: flex;
     gap: 1rem;
     justify-content: space-around;
+    /* width: 280px; */
 }
-
+.cta2{
+    width: 133px;
+}
 .project__item-cta1{
     /* text-align: center;
     margin-top: 10px; */
@@ -67,6 +70,7 @@
     gap: 1rem;
     margin-top: 3px;
     justify-content: space-around;
+    /* width: 280px; */
 }
 
 /* ================== (medium devices) ========================== */
