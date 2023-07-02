@@ -8,6 +8,7 @@ import Header from "../components/header/Header";
 import Nav from "../components/nav/Nav";
 import Project from "../components/project/Project";
 import { motion, useAnimation, useInView } from "framer-motion"
+import Service from "../components/service/Service";
 
 
 const Main = () => {
@@ -36,6 +37,7 @@ const Main = () => {
             <Nav></Nav>
             <About></About>
             <Experience></Experience>
+            <Service></Service>
             <Project></Project>
             <Contact></Contact>
             <Footer></Footer>
